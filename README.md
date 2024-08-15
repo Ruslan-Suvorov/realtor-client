@@ -17,6 +17,10 @@ material-ui-chip-input
 mdb-react-ui-kit
 @fortawesome/fontawesome-free
 
+## For build use command:
+
+npm install react-redux @reduxjs/toolkit react-router-dom axios @react-oauth/google@latest jwt-decode react-file-base64 react-toastify mdb-react-ui-kit --legacy-peer-deps @material-ui/core --legacy-peer-deps material-ui-chip-input --legacy-peer-deps @fortawesome/fontawesome-free --legacy-peer-deps @babel/plugin-transform-private-property-in-object
+
 ## Available Scripts
 
 In the project directory, you can run:
