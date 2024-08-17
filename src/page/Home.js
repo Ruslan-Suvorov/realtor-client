@@ -95,7 +95,7 @@ const Home = () => {
               )}
               <div style={{ minWidth: "300px" }}>
                 {tag && (
-                  <p style={{ marginTop: "-15px" }}>
+                  <p>
                     Filtered by Tag{" "}
                     <span
                       className="text-start"
