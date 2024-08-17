@@ -36,7 +36,7 @@ const AdvertCard = ({
             src={imageFile}
             alt={title}
             style={{
-              maxWidth: "100%",
+              width: "100%",
               height: "180px",
               borderRadius: "10px 10px 0 0",
             }}

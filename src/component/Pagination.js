@@ -8,7 +8,13 @@ const Pagination = ({ page, setPage, numberOfPages }) => {
   if (page === 1) {
     return (
       <MDBPagination
-        style={{ gap: "25px", minWidth: "250px", margin: "0 auto" }}
+        style={{
+          gap: "25px",
+          margin: "0 auto",
+          display: "flex",
+          justifyContent: "center",
+          justifySelf: "center",
+        }}
       >
         <MDBPaginationItem>
           <p style={{ marginTop: "5px" }}>

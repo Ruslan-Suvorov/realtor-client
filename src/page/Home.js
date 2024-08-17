@@ -73,10 +73,9 @@ const Home = () => {
               <form
                 onSubmit={handleSearch}
                 style={{
-                  minWidth: "350px",
                   marginTop: "0",
                   alignSelf: "flex-start",
-                  justifySelf: "flex-end",
+                  minWidth: "300px",
                 }}
               >
                 <MDBInput
