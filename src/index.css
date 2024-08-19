@@ -16,3 +16,52 @@ code {
   font-size: 18px;
   margin: 0px 20px;
 }
+
+
+.dashboard-card {
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+  background-color: white;
+  box-shadow: 0 2px 15px -3px rgba(0, 0, 0, 0.07), 0 10px 20px -2px rgba(0, 0, 0, 0.04);
+  border-color: var(--mdb-border-color-translucent);
+  border-width: 1px;
+  border-radius: 10px;
+}
+
+.dashboard-card__image {
+  width: 300px;
+          height: 175px;
+          border-radius: 10px 0 0 10px;
+}
+
+.dashboard-card__body {
+  margin: -12px 0;
+}
+
+.dashboard-card__icons-block {
+  align-self: flex-end;
+          margin: auto 0;
+          gap: 20px;
+          display: flex;
+          flex-direction: column;
+}
+
+@media (max-width: 850px) {
+  .dashboard-card {
+    flex-direction: column;
+    max-width: 300px;
+  }
+
+  .dashboard-card__image {
+    border-radius: 10px 10px 0 0;
+    max-width: 100%;
+  }
+
+  .dashboard-card__icons-block {
+    flex-direction: row;
+    align-self: center;
+    align-items: center;
+  }
+  
+}

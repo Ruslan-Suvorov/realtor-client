@@ -1,7 +1,6 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import {
-  MDBCard,
   MDBCardBody,
   MDBCardTitle,
   MDBCardText,
@@ -31,23 +30,9 @@ const DashboardCard = ({
   };
 
   return (
-    <MDBCard
-      style={{
-        display: "flex",
-        flexDirection: "row",
-        margin: "20px",
-      }}
-    >
-      <Image
-        src={imageFile}
-        alt={title}
-        style={{
-          width: "300px",
-          height: "175px",
-          borderRadius: "10px 0 0 10px",
-        }}
-      />
-      <MDBCardBody style={{ margin: "-15px 0" }}>
+    <div className="dashboard-card">
+      <Image src={imageFile} alt={title} className="dashboard-card__image" />
+      <MDBCardBody className="dashboard-card__body">
         <MDBCardTitle className="text-start">{title}</MDBCardTitle>
         <div className="text-start col-6" style={{ color: "#aaa" }}>
           <MDBIcon
@@ -68,15 +53,7 @@ const DashboardCard = ({
           <Link to={`/advert/${_id}`}> Read More</Link>
         </div>
       </MDBCardBody>
-      <div
-        style={{
-          alignSelf: "flex-end",
-          margin: "auto 0",
-          gap: "20px",
-          display: "flex",
-          flexDirection: "column",
-        }}
-      >
+      <div className="dashboard-card__icons-block">
         <MDBBtn
           style={{
             border: "none",
@@ -99,7 +76,7 @@ const DashboardCard = ({
           <MDBIcon />
         </Link>
       </div>
-    </MDBCard>
+    </div>
   );
 };
 
